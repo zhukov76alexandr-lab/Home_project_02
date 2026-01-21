@@ -5,8 +5,10 @@ ekb_price = 70_000
 target = input("Введи направление (msc, spb, ekb): ")
 
 if target == "msc":
-    print(f"Стоимость поездки составит {msc_price}")
+    target_price = msc_price
 elif target == "spb":
-    print(f"Стоимость поездки составит {spb_price}")
+    target_price = spb_price
 elif target == "ekb":
-    print(f"Стоимость поездки составит {ekb_price}")
+    target_price = ekb_price
+
+print(f"Стоимость поездки составит {target_price}. Приятного путешествия!")
