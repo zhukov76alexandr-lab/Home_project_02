@@ -4,6 +4,7 @@ ekb_price = 70_000
 kaz_price = 70_000
 
 target = input("Введи направление (msc, spb, ekb, kaz): ")
+count = int(input("Сколько будет людей: "))
 
 if target == "msc":
     target_price = msc_price
@@ -14,4 +15,4 @@ elif target == "ekb":
 elif target == "kaz":
     target_price = kaz_price
 
-print(f"Стоимость поездки составит {target_price}. Приятного путешествия!")
+print(f"Стоимость поездки составит {count * target_price}. Приятного путешествия!")
